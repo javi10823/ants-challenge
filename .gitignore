@@ -1,6 +1,7 @@
-# OSX
-#
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
 
 # Xcode
 #
@@ -20,6 +21,10 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+project.xcworkspace
+ios/Pods/
+# ios/Podfile.lock
+ios/*/Supporting/EXBuildConstants.*
 
 # Android/IntelliJ
 #
@@ -28,7 +33,11 @@ build/
 .gradle
 local.properties
 *.iml
-*.hprof
+android/.project
+android/.settings/
+android/app/src/main/java/host/exp/exponent/generated/DetachBuildConstants.java
+android/app/.project
+android/app/.classpath
 
 # node.js
 #
@@ -39,8 +48,7 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
-!debug.keystore
+
 
 # fastlane
 #
@@ -56,6 +64,18 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
-# Ruby / CocoaPods
-/ios/Pods/
-/vendor/bundle/
+#yarn
+yarn.lock
+
+.DS_Store
+
+# Expo
+.expo
+__generated__
+
+# Expo Client builds
+/client-builds
+
+
+# env files
+.env
