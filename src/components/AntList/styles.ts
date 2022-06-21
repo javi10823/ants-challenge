@@ -5,6 +5,10 @@ export const styles = StyleSheet.create({
     width: 50,
     transform: [{rotate: '90deg'}],
   },
+  detailsContainer: {
+    flexDirection: 'row',
+    marginVertical: 10,
+  },
   colorText: {
     textTransform: 'capitalize',
     flex: 1,

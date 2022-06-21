@@ -2,6 +2,6 @@ export interface Ant {
   name: string;
   length: number;
   color: string;
-  weigth: number;
+  weight: number;
   odds?: number;
 }
