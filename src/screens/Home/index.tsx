@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {SafeAreaView} from 'react-native';
 import {Button} from '../../ui';
+import {AntList} from '../../components';
+import {Ant} from '../../types';
 
 export const Home = () => {
   const [antsData, setAntsData] = useState<Ant[]>([]);
@@ -41,6 +43,7 @@ export const Home = () => {
 
   return (
     <SafeAreaView>
+      <AntList ants={antsData} />
       <Button onPress={getAntsData} buttonText="fetch data" />
     </SafeAreaView>
   );
